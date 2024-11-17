@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // function sayHello() {
+//     for(let i = 0; i < 5; i++){
+//         console.log(i);
+//     }
+//     console.log(i);
+// }
+
+// sayHello()
+
+// const person = {
+//     name: 'Ernest',
+//     walk: function() {},
+//     talk() {}
+// };
+
+// person.talk();
+
+// const targetMember = 'name';
+// person[targetMember.value] = 'john';
+
+
+//this keyword
+// const person = {
+//     name: "Ernest",
+//     walk() {
+//         console.log(this);
+//     }
+// };
+// person.walk();
+
+// const walk = person.walk.bind(person);
+// walk();
+
+
+//arrow functions
+// const square = function(number){
+//     return number * number;
+// };
+
+
+// const square = number =>  number * number;
+// console.log(square(5));
+
+// const jobs = [
+//     {id: 1, isActive: true},
+//     {id: 1, isActive: true},
+//     {id: 1, isActive: false},
+// ]
+// const activejobs = jobs.filter(function(job) {return job.isActive; });
+
+// const activejobs = jobs.filter(job =>  job.isActive);
+
+
+// const person = {
+//     talk() {
+//         var self = this;
+//         setTimeout(() => {
+//             console.log('this', this);
+//         }, 1000);
+       
+//     }
+// };
+
+// person.talk();
+
+// const colors = ['red', 'green', 'blue'];
+// const items = colors.map(color => `<li>${color}</li>`);
+
+// const first = { name: 'Ernest' };
+// const second = { job: 'Intructor '};
+
+// const clone = {...first };
+// console.log(clone);
+
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    walk() {
+        console.log('walk');
+    }
+}
+const person = new Person('Ernest');
+Person
+
+
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <h1>Creating JavaScript Functions</h1>
+    <p id="demo"></p>
+
+
+    <!-- <script>
+        // fxn delcaration
+
+        function My_function(val){
+            document.getElementById("demo").innerHTML = val * val;
+        }
+        My_function(5);
+    </script>
+
+
+    <script>
+        //fxn expression
+
+        let x = function(){
+            alert("Hello! ")
+        }
+        let y =x;
+        document.getElementById("demo").innerHTML = y();
+
+    </script> 
+        
+
+    <script>
+        //fxn constuctor
+
+        var Myfunction = new Function("a", "b", "return a+b");
+        var z = Myfunction(2, 3);
+        document.getElementById("demo").innerHTML = "The sum is " + z;
+
+
+    </script>  -->
+
+
+    <!-- <script>
+        // self-invoking fxns
+
+        (function() {
+            alert("Hello! Welcome to my world!");
+        })();
+    </script> 
+
+    
+    <script>
+        // fxns as values
+
+        function product(a,b){
+            return a * b;
+        }
+        let y = product(2, 5)*5;
+        document.getElementById("demo").innerHTML = "The product is " + y;
+
+    </script> -->
+
+
+    <!-- <script>
+        // fxns as objects
+
+        var body = "return Math.PI * rad * rad "
+        var circle = new Function("rad", body)
+        alert(circle(5));
+    </script> -->
+
+
+    <!-- <script>
+        // Arrow fxns
+
+        const Myfunc = (a, b, c) => {return a*b*c}
+        let product = Myfunc(2, 3, 4);
+        document.getElementById("demo").innerHTML = "The product a is " + product;
+    </script> -->
+
+    <script>
+        // Generator fxns
+
+        function* generateFunc(){
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+        let generator = generateFunc();
+        let one = generator.next();
+        let two = generator.next();
+        let three = generator.next();
+        alert(JSON.stringify(one));
+        alert(JSON.stringify(two));
+        alert(JSON.stringify(three));
+    </script>
+
+</body>
+</html>

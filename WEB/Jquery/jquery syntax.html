@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First jQuery Application</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- <script>
+            $(document).ready(function() {
+                $('h1').css("color", "#0088ff");
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                alert("Hello World!");
+            })
+        </script> 
+
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+              $("p").hide();
+            });
+          });
+          </script>
+
+          <script>
+           $(document).ready(function() {
+            //Highest element with id mark
+            $("#mark").css("background", "#ff00ff");
+
+           });
+          </script>
+
+          <script>
+            //selecting element by class
+            $(document).ready(function(){
+              $(".mark").css("background", "#ff0000");
+            });
+          </script>
+
+          <script>
+            //selecting element by name
+            $(document).ready(function(){
+              //highlight paragraph elements
+              $("p").css("background", "#ddd");
+            });
+          </script>
+
+          <script>
+            //selecting elements by attribute
+            $(document).css(function(){
+              //highlight paragraph elements
+              $("input[type='text']").css("background", "yellow");
+            });
+          </script>-->
+
+          <script>
+            //selecting elements by compound css selector
+            $(document).ready(function(){
+              //highlighting only paragraph elements with class mark
+              $("p.mark").css("background", "yellow");
+
+              //highlight only span elements inside the element with ID mark
+            $("#mark span").css("background", "#ff0000");
+            });
+
+            //Highlight li elements inside the ul elements
+            $("ul li").css("background", "blue");
+
+            //highlight li elements only inside the ul element with id mark
+            $("ul#mark li").css("background", "red");
+
+            //highlight li elements inside all the ul elements with class mark
+            $("ul.mark li").css("background", "green");
+
+            //highlight all anchor element  with target blank
+            $('a[target="_blank"]').css("background", "yellow");
+          </script>
+
+    </head>
+    <body>
+        <!-- <h1>Hello, World!</h1> -->
+        <div id="mark"> This is a paragraph.</div>
+        <p>This is another paragraph.</p>
+        <p>This is one more paragraph.</p>
+        <p><strong>Note:</strong>The value of the id attribute must be unique in an HTML document.</p>
+
+        <div class="mark"> This is a paragraph.</div>
+        
+
+
+        <form>
+          <label">Name: <input type="text"></label>
+          <label>Password: <input type="password"></label>
+          <label>Email:<input type="email"></label>
+          <input type="submit" value="Sign-in">
+        </form>
+
+
+        <p>This is a paragraph.</p>
+        <p class="mark">This is another paragraph.</p>
+        <p>This is one more paragraph.</p>
+
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+        <ul id="mark">
+          <li>List item one</li>
+          <li>List <span>item two</span></li>
+          <li>List item three</li>
+        </ul>
+        <ul class="mark">
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+        <p>Go to <a href="https://wa.me/+2349013129881" target="_blank">Home page</a></p>
+
+    </body>
+</html>

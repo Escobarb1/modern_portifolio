@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js loops</title>
+    </head>
+    <body>
+        <script>
+            //the while loop
+            var i = 1;
+            while(i <= 5) {
+                document.write("<p> The number is" + " " + i + "</p>");
+                i++;
+            }
+        </script>
+
+        <script>
+            //the do...while loop
+            var i = 1;
+            do {
+                document.write("<p> The number is" + " " + i + "</p>");
+                i++
+            }
+            while(i <= 5);
+        </script>
+
+        <script>
+            //the for loop
+            for(var i = 1; i <= 5; i++) {
+                document.write("<p> The number is" + " " + i + "</p>");
+            }
+        </script>
+ 
+        <script>
+            var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+            for(var i = 0; i<fruits.length; i++){
+                document.write("<p>" + fruits[i] + "</p>");
+            }
+        </script>
+
+        <script>
+            //the for....in loop
+            var person = {"name": "Clark", "Surname": "Kent", "age": "36"};
+            for(var prop in person) {
+                document.write("<p>" + prop + " = " + person[prop] + "</p>");
+            }
+        </script>
+
+        <script>
+            var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+            for(var i in fruits) {
+                document.write("<p>" + fruits[i] + "</p>");
+            }
+        </script>
+
+        <script>
+            //The for...of loop
+            let letters = ["a", "b", "c", "d", "e", "f"];
+            for(let letter of letters) {
+                console.log(letter);
+            }
+            let greet = "Hello World";
+            for(let character of greet) {
+                console.log(character);
+            }
+        </script>
+    </body>
+</html>

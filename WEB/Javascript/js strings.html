@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <body>
+     <p id="hero"></p>
+        <script>
+            var a = 'The quick brown fox jumps \n over the lazy dog,';
+            document.write('<pre>' + a + '<pre>');
+            
+            let b = 'C:\Users\Downloads\ernest';
+            document.write(b);
+
+            let c = 'This is a paragraph \n of text.';
+            document.write(c.length);
+            document.write('<pre>' + c + '<pre>');
+
+            let str = "If the facts don't the theory, change the facts.";
+            let pos = str.lastIndexOf("facts");
+
+
+            
+            alert(pos);
+
+            let x = "The quick brown fox jumps over the lazy dog.";
+            document.write(x.substring(4, 15));
+            document.write(x.substring(9, 0));
+            document.write(x.substring(-28, -19));
+            document.write(x.substring(31));
+
+            var h = "Color red looks brighter than color blue";
+            var result = h.replace("color", "paint");
+            alert(result);
+
+            let hello = 'Hello';
+            let world = 'World';
+            let greet = hello + " " + world;
+            document.write(greet);
+
+            let wish = "Happy";
+                wish += "New Year";
+                document.write(wish);               
+                document.write(wish[3]);
+
+
+
+
+
+            var fruit = "Apple, Banana, Mango, Orange, Papaya";
+            var f = fruit.split(", ");
+            document.write(f[0]);
+            document.write(f[2]);
+            document.write(f[f.length - 1]);
+            
+            for(var i in f) {
+                document.write('<p>' + f[i] + '<p>');
+            }
+
+
+
+
+            var intrest = "INTERSTELLAR";
+            var show = intrest.split("");
+            document.write(show[0]);
+            document.write(show[1]);
+            document.write(show[show.length - 1])
+
+            for(var i in show){
+                document.write("<br>" + show[i]);
+            }
+
+
+
+            var g = "Daddy, Mummy, Gods'will, Evangel, Ernest, Goodluck";
+            var pId = g.split(",");
+            for ( var i in pId){
+                document.write("<p>" + pId[i] + "</p>");
+            }
+            
+        </script>
+    </body>
+</html>

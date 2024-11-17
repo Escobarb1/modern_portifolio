@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sorting arrays</title>
+    </head>
+    <body>
+        <script>
+            var fruits = ['Banana', 'Orange', 'Apple', 'Papaya', 'Mango'];
+            var sorted = fruits.sort();
+            
+            document.write(fruits);
+            for(var i in sorted){
+                document.write(sorted[i] + "<br>");
+            }
+        </script>
+
+        <script>
+            //reversing an array
+            var count = ["one", "two", "three", "four", "five"];
+            var reversed = count.reverse();
+            document.write(count);
+            document.write(reversed);
+        </script>
+
+        <script>
+            var numbers = [5, 20, 10, 75, 50, 100];
+            numbers.sort(function(a, b){
+                return a - b;
+            })
+            document.write(numbers);
+        </script>
+
+        <script>
+            //finding the maximum and minimum value in an array
+            var numbers = [3, -7, 10, 8, 15, 2];
+            function findMax(array) {
+                return Math.max.apply(null, array);
+            }
+            function findMin(array) {
+                return Math.min.apply(null, array);
+            }
+            document.write(findMax(numbers));
+            document.write(findMin(numbers));
+        </script>
+
+        <script>
+            var persons = [
+                { name: "Harry", age: 14},
+                { name: "Ethan", age: 30},
+                { name: "Peter", age: 21},
+                { name: "Clark", age: 42},
+                { name: "Alice", age: 16},
+            ];
+            //sort by age
+            persons.sort(function (a, b) {
+                return a.age - b.age;
+            })
+
+            console.log(persons);
+            //sort by age
+            
+            persons.sort(function(a, b){
+                var x = a.name.toLowerCase();
+                var y = b.name.toLowerCase();
+                if(x < y) {
+                    return -1;
+                }
+                if(x > y) {
+                    return 1;
+                }
+                return 0;
+            })
+            console.log(persons);
+        </script>
+    </body>
+</html>

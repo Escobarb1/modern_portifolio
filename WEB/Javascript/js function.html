@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function</title>
+    </head>
+    <body>
+        <script>
+            function sayHello() {
+                document.write('Hello, welcome to this website!');
+            }
+           sayHello();
+        </script>
+
+        <script>
+            function displaySum(num1, num2) {
+                var total = num1 + num2;
+                alert(total);
+            }
+            displaySum(6, 20);
+            displaySum(-5, 17);
+        </script> 
+
+        <script>
+            function showFullname(firstName, lastName) {
+                alert(firstName + " " + lastName);
+            }
+            showFullname("Clark", "Kent");
+            showFullname("John");
+        </script>--
+
+        <script>
+            function sayHello(name = 'Guest') {
+                alert('Hello,' + name);
+            }
+            sayHello();
+            sayHello('John');
+        </script>
+
+        <script>
+            function sayHello(name) {
+                var name = name || 'Guest';
+                alert('Hello,' + name);
+            }
+            sayHello();
+            sayHello('John');
+        </script>
+
+        <script>
+            //defining function
+            function getSum(num1, num2) {
+                var total = num1 + num2;
+                return total;
+            }
+            //displaying returned value
+            alert(getSum(6, 20));
+            alert(getSum(-5, 17));
+        </script>
+
+        <script>
+            function divideNumbers(dividend, divisor) {
+                var quotient = dividend / divisor;
+                var arr = [dividend, divisor, quotient];
+                return arr;
+            }
+            var all = divideNumbers(10, 2);
+            alert(all[0]);
+            alert(all[1]);
+            alert(all[2]);
+        </script>
+      
+        <script>
+            //working with function expression
+            // Function Declaration
+            function getSum(num1, num2) {
+                var total = num1 + num2;
+                return total;
+            }
+ 
+            // Function Expression
+            var getSum = function(num1, num2) {
+            var total = num1 + num2;
+               return total;
+            };
+        </script>
+
+        <script>
+            var getSum = function(num1, num2) {
+            var total = num1 + num2;
+               return total;
+            };
+ 
+            alert(getSum(5, 10)); // 0utputs: 15
+ 
+            var sum = getSum(7, 25);
+            alert(sum); // 0utputs: 32
+        </script>
+
+        <script>
+            declaration(); // Outputs: Hi, I'm a function declaration!
+            function declaration() {
+            alert("Hi, I'm a function declaration!");
+            }
+ 
+            expression(); // Uncaught TypeError: undefined is not a function
+            var expression = function() {
+            alert("Hi, I'm a function expression!");
+            };
+        </script>
+
+        <script>
+            // Defining function
+            function greetWorld() {
+            var greet = "Hello World!";
+            alert(greet);
+            }
+ 
+            greetWorld(); // Outputs: Hello World!
+ 
+            alert(greet); // Uncaught ReferenceError: greet is not defined
+        </script>
+
+        <script>
+            var greet = "Hello World!";
+ 
+            // Defining function
+            function greetWorld() {
+            alert(greet);
+            }
+  
+            greetWorld();  // Outputs: Hello World!
+  
+            alert(greet); // Outputs: Hello World!
+        </script>
+    </body>
+</html>

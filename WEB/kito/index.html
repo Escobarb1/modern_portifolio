@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Response | Index</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --main-background: #0b0c0f;
+    --main-fonts-color: #fff;
+    --main-decor-color: #0000ff;
+    --main-header-background: #21252e;
+    --main-font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    color: var(--main-fonts-color);
+    background: url(https://media.istockphoto.com/id/484546002/photo/beautiful-drops-of-water-in-purple-light.jpg?s=170667a&w=0&k=20&c=AZW1v8VpQd7k-lkxmfN4cUrZ3M1cwR1b6SWiKCfTbIk=);
+    background-size: cover;
+	background-position:center;
+    position: absolute;
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    background: transparent;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+}
+
+.logo{
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem; 
+    margin-right: 1rem;
+    font-size: 2.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--main-fonts-color);
+    font-family: Impact, 'Arial Narrow', sans-serif;
+}
+
+span{
+    color: #ff0000;
+}
+
+.navbar{
+    list-style-type: none;
+    position: relative;
+    display: inline-flex;
+}
+
+a.nav-link{
+    margin: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav :first-child{
+    margin: 60px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50px;
+    color: var(--main-decor-color);
+    border: var(--main-decor-color) 1px solid;
+}
+
+nav :last-child{
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: var(--main-decor-color);
+    color: var(--main-fonts-color);
+}
+
+#main :first-child{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 7rem;
+    margin: 3.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main :last-child{
+    margin: 3.7rem;
+    letter-spacing: normal;
+    margin-bottom: -10px;
+    font-size: 1.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#guo{
+    display: inline-flex;
+}
+
+#demo{
+    padding: 5px;
+    font-size: 40px;
+    margin: 3.7rem;
+    font-weight: 550;
+    margin-bottom: auto;
+    border-radius: 20px;
+    box-shadow: #8307f8 0px 0px 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero{
+    font-size: 40px;
+    margin-top: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+            <a class="logo" href="#home">code<span>with</span>oppong</a>
+
+                <ul class="navbar">
+                    <li class="nav-item"><a class="nav-link" href="#page-top">product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Solution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">About us</a></li>
+                </ul>
+      
+            <nav>
+                <button type="button" class="nav-item">Sign in</button>
+                <button type="button" class="nav-item">Get a demo</button>
+            </nav>
+            </header>
+            
+            <div id="main">
+                <p>Know what your<br>company knows,<br>instantly.</p>
+                <p>codewithoppong.is the work assistant with intuition. Find exactly<br>what you need,
+                     right when you need it. So you and your team can<br>get big things done.</p>
+            </div>
+
+            <div id="guo">
+            <button type="button" id="demo">Get a demo</button>
+            <div class="hero"> &blacktriangleright; Watch video</div>
+            </div>
+        </div>
+    </body>
+</html>

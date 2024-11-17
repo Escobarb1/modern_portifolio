@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>if...else practice</title>
+    </head>
+    <body>
+            <script>
+            var now = new Date();
+            var dayOfWeek = now.getDay();
+
+            if(dayOfWeek == 6){
+                alert("Have a nice weekend");
+            }
+            else{
+                alert("Have a nice day")
+            }   
+        </script>
+
+        <script>
+            var now = new Date();
+            var dayOfWeek = now.getDay();
+            if(dayOfWeek == 5) {
+                alert("Have a nice weekend");
+            }
+            else if(dayOfWeek == 0)  {
+                alert("Have nice sunday");
+            }
+            else{
+                alert("Have a nice day")
+            }
+        </script>
+
+        <script>
+            var  userType;
+            var age = 21;
+            if(age < 18){
+                userType = 'Child';
+            }
+            else{
+                userType = 'Adult';
+            }
+            alert(userType)
+        </script> 
+
+        <script>
+            var d = new Date();
+
+            switch(d.getDay()) {
+                case 0:
+                    alert('Today is Sunday.');
+                    break;
+                case 1:
+                    alert('Today is Monday.');
+                    break;
+                case 2:
+                    alert('Today is Tuesday.');
+                    break;
+                case 3:
+                    alert('Today is Wednesday.')
+                    break;
+                case 4:
+                    alert('Today is Thursday.');
+                    break;
+                case 5:
+                    alert('Today is Friday.');
+                    break;
+                case 6:
+                    alert('Today is Saturday.');
+                    break;
+                default:
+                    alert('No information available for that day.');
+                    break;
+            }
+        </script>
+
+        <script>
+            var d = new Date();
+            switch(d.getDay()) {
+                default:
+                    alert('Looking forward to the weekend.');
+                    break;
+                case 6:
+                    alert('Today is Saturday.');
+                    break;
+                case 0:
+                    alert('Today is Sunday.');
+            }
+        </script> 
+        
+        <script>
+            var x =  new Date();
+            switch(x.getDay()) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    document.write('It is a weekday.');
+                    break;
+                case 0:
+                case 6:
+                    document.write('It is a weekend day.');
+                    break;
+                default:
+                    document.write('Enjoy every day of your life.');               
+            }
+        </script> 
+    </body>
+</html>

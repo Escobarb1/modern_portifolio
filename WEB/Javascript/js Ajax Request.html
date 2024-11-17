@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Ajax GET Demo</title>
+<script>
+function displayFullName() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+
+    // Instantiating the request object
+    request.open("GET", "greet.php?fname=John&lname=Clark");
+
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            document.getElementById("result").innerHTML = this.responseText;
+        }
+    };
+
+    // Sending the request to the server
+    request.send();
+}
+</script>
+</head>
+<body>
+    <div id="result">
+        <p>Content of the result DIV box will be replaced by the server response</p>
+    </div>
+     <button type="button" onclick="displayFullName()">Display Full Name</button>   
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Ajax post demo</title>
+        <script>
+            function postComment() {
+                //creating the XMLHttpRequest  object
+                var request = new XMLHttpRequest();
+
+                //instantiating the request object
+                request.open("POST", "confirmation.php");
+
+                //defining event listener for readystatechange
+                request.onreadystatechange = function() {
+                    //check if the request is complete and successful
+                    if(this.readyState === 4 && this.status === 200) {
+                        //inserting the response from server into an element
+                        document.getElementById("result").innerHTML = this.responseText;
+                    }
+                };
+                //retrieving the form data
+                var myForm = document.getElementById(myForm);
+                var formData = new FormData(myForm);
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myForm">
+            <label>Name:</label>
+            <div><input type="text" name="name"></div>
+            <br>
+            <label>Comment</label>
+            <div><textarea name="comment"></textarea></div>
+            <p><button type="button" onclick="postComment()">Post Comment</button></p>
+        </form>
+        <div id="result">
+            <p>Content of the result DIV box will be replaced by the server response</p>
+        </div>
+    </body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Ajax POST Demo</title>
+<script>
+function postComment() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+    
+    // Instantiating the request object
+    request.open("POST", "confirmation.php");
+    
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            document.getElementById("result").innerHTML = this.responseText;
+        }
+    };
+    
+    // Retrieving the form data
+    var myForm = document.getElementById("myForm");
+    var formData = new FormData(myForm);
+
+    // Sending the request to the server
+    request.send(formData);
+}
+</script>
+</head>
+<body>
+    <form id="myForm">
+        <label>Name:</label>
+        <div><input type="text" name="name"></div>
+        <br>
+        <label>Comment:</label>
+        <div><textarea name="comment"></textarea></div>
+        <p><button type="button" onclick="postComment()">Post Comment</button></p>
+    </form>    
+    <div id="result">
+        <p>Content of the result DIV box will be replaced by the server response</p>
+    </div>    
+</body>
+</html> -->

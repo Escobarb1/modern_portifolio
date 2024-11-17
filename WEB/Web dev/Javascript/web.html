@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- <script>
+    let answer = prompt('What is your name?');
+    if(typeof(answer) === 'string') {
+        // var h1 = document.createElement('h1')
+        // h1.innerText = answer;
+        // document.body.innerText = '';
+        // document.body.appendChild(h1);
+         var h1 = document.createElement('h1');
+         h1.innerText = `Welcome to my world ${answer}`;
+         document.body.innerText = '';
+         document.body.appendChild(h1);
+    } else{
+        var h3 = document.createElement('h3');
+        h3.innerText = 'Enter your name';
+        // document.body.innerText = '';
+        document.body.appendChild(h3);
+    }
+    </script> -->
+
+    <script>
+        var h1 = document.createElement('h1');
+        h1.innerText = "Type into the input to make this text change";
+        var input = document.createElement('input');
+        input.setAttribute('type', 'text');
+        document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input);
+        input.addEventListener('change', function(){
+            h1.innerText = input.value;
+        });
+    </script>
+    
+
+</body>
+</html>

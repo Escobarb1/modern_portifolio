@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    :root{
+        --main-background: #000000;
+        --main-fonts-color: #fff;
+        --main-header-background: #2b3242;
+        --main-font-family: 'poppins', sans-serif;
+        --main-decor-color: #00a9e2;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        background-color: var(--main-background);
+    }
+
+                        /* vertical nav-bar */
+
+    /* ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        background-color: #f1f1f1;
+        border: 1px solid #fff;
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+    }
+
+    li a{
+        display: block;
+        color: var(--main-fonts-color);
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+    li a:hover{
+        background-color: #555;
+        color: var(--main-fonts-color);
+    }
+
+    .active{
+        background-color: #04AA6D;
+        color: var(--main-fonts-color);
+    } */
+
+
+
+                                    /* horizontal nav-bar */
+
+
+                                    
+    /* li{
+        display: inline;
+        float: right;
+    }
+
+    li a{
+        display: block;
+        color: var(--main-fonts-color);
+        text-align: center;
+        padding: 8px 14px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: var(--main-decor-color);
+        color: var(--main-background);
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+    }
+
+    a{
+        display: block;
+        padding: 8px;
+    }
+
+    ul:hover{
+        opacity: 1;
+        background: var(--main-header-background);
+    } */
+
+
+
+    #menu{
+        float: right;
+        padding: 10px;
+    }
+    #menu ul{
+        display: inline-flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu li{
+        padding: 8px;
+        list-style-type: none;
+    }
+    
+    #menu a{
+        text-decoration: none;
+        color: var(--main-fonts-color);
+        padding: 3px;
+        text-transform: uppercase;
+        font-family: var(--main-font-family);
+    }
+
+    #menu a:hover{
+        color: var(--main-background);
+        background-color: var(--main-decor-color);
+    }
+    .active{
+        background-color: var(--main-decor-color);
+    }
+
+    menu:hover{
+        opacity: 1;
+        background: var(--main-header-background);
+    }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js dom manipulation</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph</p>
+        </div>
+
+        <script>
+            //creating a new div element
+            var newDiv = document.createElement("div");
+
+            //creating a text node
+            var newContent = document.createTextNode("hi, how are you doing?");
+
+            //adding the text node to the newly created div
+            newDiv.appendChild(newContent);
+
+            //adding the newly created element and it's content into the DOM
+            var currentDiv = document.getElementById("main");
+            document.body.appendChild(newDiv, currentDiv);
+        </script>
+
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph</p>
+        </div>
+        <script>
+            //creating a new div element
+            var newDiv = document.createElement("div");
+
+            //creating a text node
+            var newContent = document.createTextNode("hi, how are you doing?");
+
+            //adding the text node to the newly created div
+            newDiv.appendChild(newContent);
+
+            //adding the newly created element and it's content into the DOM
+            var currentDiv = document.getElementById("main");
+            document.body.insertBefore(newDiv, currentDiv);
+        </script> 
+
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph.</p>
+        </div>
+
+        <script>
+            //geting inner html contents
+            var contents = document.getElementById("main").innerHTML;
+            alert(contents);
+
+            //setting inner html contents
+            var mainDiv = document.getElementById("main");
+            mainDiv.innerHTML = "<p>This is <em>newly inserted</em> paragraph.</p>";
+        </script>
+
+        <!-- beforebegin -->
+        <div id="main">
+            <!-- afterbegin -->
+            <h1 id="title">Hello World!</h1>
+            <!-- beforeend -->
+        </div>
+            <!-- afterend -->
+ 
+        <script>
+            // Selecting target element
+            var mainDiv = document.getElementById("main");
+ 
+            // Inserting HTML just before the element itself, as a previous sibling
+            mainDiv.insertAdjacentHTML('beforebegin', '<p>This is paragraph one.</p>');
+ 
+            // Inserting HTML just inside the element, before its first child
+            mainDiv.insertAdjacentHTML('afterbegin', '<p>This is paragraph two.</p>');
+ 
+            // Inserting HTML just inside the element, after its last child
+            mainDiv.insertAdjacentHTML('beforeend', '<p>This is paragraph three.</p>');
+ 
+            // Inserting HTML just after the element itself, as a next sibling
+            mainDiv.insertAdjacentHTML('afterend', '<p>This is paragraph four.</p>');
+        </script>
+
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph.</p>
+        </div>
+
+        <script>
+            var parentElem = document.getElementById("main");
+            var childElem = document.getElementById("hint");
+            parentElem.removeChild(childElem);
+        </script>
+
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph.</p>
+        </div>
+
+        <script>
+            var childElem = document.getElementById("hint");
+            childElem.parentNode.removeChild(childElem);
+        </script>
+
+        <div id="main">
+            <h1 id="title">Hello World!</h1>
+            <p id="hint">This is a simple paragraph.</p>
+        </div>
+         
+        <script>
+        var parentElem = document.getElementById("main");
+        var oldPara = document.getElementById("hint");
+         
+        // Creating new elememt
+        var newPara = document.createElement("p");
+        var newContent = document.createTextNode("This is a new paragraph.");
+        newPara.appendChild(newContent);
+         
+        // Replacing old paragraph with newly created paragraph
+        parentElem.replaceChild(newPara, oldPara);
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+
+        <script>
+            //Accessing the  child node
+            var main = document.getElementById("main");
+            console.log(main.firstChild.nodeName);
+
+            var hint = document.getElementById("hint");
+            console.log(hint.firstChild.nodeName);
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+        
+        <script>
+        var main = document.getElementById("main");
+        alert(main.firstElementChild.nodeName); // Outputs: H1
+        main.firstElementChild.style.color = "red";
+        
+        var hint = document.getElementById("hint");
+        alert(hint.firstElementChild.nodeName); // Outputs: SPAN
+        hint.firstElementChild.style.color = "blue";
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+
+        <script>
+            var main = document.getElementById("main");
+
+            //First check that the element has child nodes
+            if(main.hasChildNodes()) {
+                var nodes = main.childNodes;
+
+                //loop through node list and display node name
+                for(var i = 0; i < nodes.length; i++) {
+                    alert(nodes[i].nodeName);
+                }
+            }
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+        
+        <script>
+        var main = document.getElementById("main");
+        
+        // First check that the element has child nodes 
+        if(main.hasChildNodes()) {
+            var nodes = main.children;
+            
+            // Loop through node list and display node name
+            for(var i = 0; i < nodes.length; i++) {
+                alert(nodes[i].nodeName);
+            }
+        }
+        </script>
+
+        <div id="main">
+           <h1 id="title">My Heading</h1>
+           <p id="hint"><span>This is some text.</span></p>
+        </div>
+
+        <script>
+           var hint = document.getElementById("hint");
+           alert(hint.parentNode.nodeName); // Outputs: DIV
+           alert(document.documentElement.parentNode.nodeName); // Outputs: #document
+           alert(document.parentNode); // Outputs: null
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+        
+        <script>
+        var hint = document.getElementById("hint");
+        alert(hint.parentNode.nodeName); // Outputs: DIV
+        hint.parentNode.style.backgroundColor = "yellow";
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p><hr>
+        </div>
+
+        <script>
+            var title = document.getElementById("title");
+            alert(title.previousSibling.nodeName); // Outputs: #text
+
+            var hint = document.getElementById("hint");
+          alert(hint.nextSibling.nodeName); // Outputs: HR
+        </script>
+
+        <div id="main">
+            <h1 id="title">My Heading</h1>
+            <p id="hint"><span>This is some text.</span></p>
+        </div>
+        
+        <script>
+        var hint = document.getElementById("hint");
+        alert(hint.previousElementSibling.nodeName); // Outputs: H1
+        alert(hint.previousElementSibling.textContent); // Outputs: My Heading
+        
+        var title = document.getElementById("title");
+        alert(title.nextElementSibling.nodeName); // Outputs: P
+        alert(title.nextElementSibling.textContent); // Outputs: This is some text.
+        </script>
+    </body>
+</html>

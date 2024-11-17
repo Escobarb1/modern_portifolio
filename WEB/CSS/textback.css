@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+   }
+
+   #container{
+       margin: 0;
+       background-image: url(img1.jpg);
+       background-size: cover;
+       background-position: center;
+       justify-content: center;
+       text-align: center;
+   }
+
+   .centerme{
+       padding: 10px;
+       color: burlywood;
+       background-color: rgb(236, 3, 3);
+       font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .menu{
+       display: flex 1;
+       padding: 5px;
+       /* background-color: #000000; */
+       color: #fff;
+       text-align: center;
+       margin-left: 500px;
+   }
+
+   .menu ul{
+       list-style-type: none;
+       display: flex;
+        }
+
+  .menu a:link{
+      color:red;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .menu a:hover{
+      background-color: #000000;
+  }

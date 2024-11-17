@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>ES6 js</title>
+   </head>
+    <!-- <script>
+       //the let keyword
+
+       //ES6 syntax
+       for(let i = 0; i < 5; i++) {
+           console.log(i);
+       }
+       console.log(i);//undefined
+
+       //ES5 syntax
+       for(var i = 0; i < 5; i++) {
+           console.log(i);
+       }
+       console(i);//5
+   </script>  -->
+
+<!-- <script>
+    //The const keyword
+
+    const PI = 3.14;
+    console.log(PI);
+
+    PI = 10;//error
+
+
+    //changing object property value
+    const PERSON = {name: "Peter", age: 28};
+    console.log(PERSON.age);
+    PERSON.age = 30;
+    console.log(PERSON.age);
+    PERSON.age = 50;
+    console.log(PERSON.age);
+    //changing array element 
+    const COLORS = ["red", "green", "blue"];
+    console.log(COLORS[0]);
+    COLORS[0] = "yellow";
+    console.log(COLORS[0]);
+   </script>
+
+   <script>
+    //the for...of loop
+    
+    //Iterating over array
+    let letters = ["a", "b", "c", "d", "e", "f"];
+
+    for(let letter of letters) {
+        console.log(letter);
+    }
+    //Iterating over string
+    let greet = "Hello World!";
+    for(let character of greet) {
+        console.log(character);
+    }
+   </script>
+
+   <script>
+    //Template literals
+
+    //simple muti-line string
+    let str = `The quick brown fox jumps over the lazy dog.`;
+
+    //string with embedded variable and expression
+    let a = 10;
+    let b = 20;
+    let result = `The sum of ${a} and ${b} is ${a+b}.`;
+    console.log(result);
+   </script>
+
+   <script>
+    //0r
+    //muti-line string
+    var str = 'The quick brown fox\n\t'
+               + 'jumps over the lazy dog.';
+
+    //creating string using variables and expression
+    var a = 10;
+    var b = 20;
+    var result = 'The sum of ' + a + ' and ' + b + ' is ' + (a+b) + '.';
+    console.log(result);
+   </script>
+
+   <script>
+    function sayHello(name='World') {
+        return `Hello ${name}!`; 
+    }
+    console.log(sayHello());
+    console.log(sayHello('john'));
+   </script>
+
+   <script>
+    function sayHello(name) {
+        var name = name || 'World';
+        return 'Hello ' + name + '!';
+    }
+    console.log(sayHello());
+    console.log(sayHello('john'));
+   </script>
+
+   <script>
+    //Arrow functions
+
+    //function expression
+    var sum = function(a, b) {
+        return a + b;
+    }
+    console.log(sum(2, 3));
+
+    //arrow function
+    var sum = (a, b) => a + b;
+    console.log(sum(2, 3));
+   </script>
+
+   <script>
+    // Single parameter, single statement
+    var greet = name => alert("Hi " + name + "!");
+    greet("Peter"); // Hi Peter!
+
+    // Multiple arguments, single statement
+    var multiply = (x, y) => x * y;
+    alert(multiply(2, 3)); // 6
+
+
+    // Single parameter, multiple statements
+    var test = age => {
+    if(age > 18) {
+        alert("Adult");
+    } else {
+        alert("Teenager");
+    }
+    } 
+    test(21); // Adult
+
+    // Multiple parameters, multiple statements
+    var divide = (x, y) => {
+    if(y != 0) {
+        return x / y;
+    }
+    }
+    alert(divide(10, 2)); // 5
+
+    // No parameter, single statement
+    var hello = () => alert('Hello World!');
+    hello(); // Hello World!
+   </script>
+
+   <script>
+    function Person(nickname, country) {
+        this.nickname = nickname;
+        this.country = country;
+
+        this.getInfo = function() {
+            //outer function context (person object)
+        return function() {  
+            //inner function context (Global object 'window')
+            alert(this.constructor.name);
+            alert("Hi, I'm " + this.nickname + " from " + this.country);
+          };
+        }
+    }
+    var p = new Person('Rick', 'Argentinal');
+    var printInfo = p.getInfo();
+    printInfo();
+   </script>
+
+   <script>
+    //ES6 way
+    function Person(nickname, country) {
+        this.nickname = nickname;
+        this.country = country;
+
+        this.getInfo = function() {
+            //outer function context (person object)
+            return() => {
+                //inner function context (person object)
+                alert(this.constructor.name);
+                alert(`Hi, I'm ${this.nickname} from ${this.country}`);
+            };
+        }
+    }
+    let p = new Person('Rick', 'Argentina');
+    let printInfo = p.getInfo = p.getInfo();
+    printInfo();
+   </script>
+
+   <script>
+    class Rectangle {
+        //class constructor
+        constructor(length, width ) {
+            this.length = length;
+            this.width = width;
+        }
+        //class method
+        getArea() {
+            return this.length * this.width;
+        }
+    }
+    //square class inherits from the rectangle class 
+    class square extends Rectangle {
+        //child class constructor
+        constructor(length) {
+            //call parents constructor
+            super(length, length);
+        }
+        //child class method
+        getPerimeter() {
+            return 2 * (this.length + this.width);
+        }
+    }
+    let rectangle = new Rectangle(5, 10);
+    alert(rectangle.getArea());
+
+    let square = new Square(5);
+    alert(square.getArea());
+    alert(square.getPerimeter());
+
+    alert(square instanceof Square);
+    alert(square instanceof Rectangle);
+    alert(rectangle instanceof Square);
+   </script>
+
+   <script>
+    function sortNames(...names) {
+        return names.sort();
+    }   
+    alert(sortNames("Sarah", "Harry", "Peter"));
+    alert(sortNames("Tony", "Ben", "Rick", "Jos"));
+   </script>  
+
+   <script>
+    var fruit = "Apple, Banana, Mango, Orange, Papaya";
+            var f = fruit.split(", ");
+            document.write(f[0]);
+            document.write(f[2]);
+            document.write(f[f.length - 1]);
+            
+            for(var i in f) {
+                document.write('<p>' + f[i] + '<p>');
+            }
+   </script>
+
+   <script>
+    var country = "Nigeria, America, London, England";
+    var f = country.split(", ");
+    for(var i in f){
+        document.write('<p>' + f[i] + '<p>');
+    }
+   </script>
+
+   <script>
+    function myFunction(a, b, ...args){
+        return args;
+    }
+    alert(myFunction(1, 2, 3, 4, 5));
+    alert(myFunction(-7, 5, 0, -2, 4.5, 1, 3));
+   </script>
+
+   <script>
+    function addNumbers(a, b, c) {
+        return a + b + c;
+    }
+    let numbers = [5, 12, 8];
+
+    //ES5 way of passing array as an argument of a function
+    alert(addNumbers.apply(null, numbers));
+
+    //ES6 spread operator
+    alert(addNumbers(...numbers));
+   </script>
+
+   <script>
+    let pets = ["Cats", "Dog", "Parrot"];
+    let bugs = ["Ant", "Bee"];
+
+    //Creating an array by inserting elements from other arrays
+    let animals = [...pets, "Tiger", "Wolf", "Zebra", ...bugs];
+    alert(animals);
+   </script>
+
+   <script>
+    //ES5 syntax
+    var fruits = ["Apple", "Banana"];
+    var a = fruits[0];
+    var b = fruits[1];
+    alert(a);
+    alert(b);
+   </script>
+
+   <script>
+    //ES6 syntax
+    let fruits = ["Apple", "Banana"];
+    let [a, b] = fruits;
+    alert(a);
+    alert(b);
+   </script>
+
+   <script>
+    //ES6 syntax
+    let fruits = ["Apple", "Banana", "Mango"];
+    let [a, ...r] = fruits;
+    alert(a);
+    alert(r);
+    alert(Array.isArray(r));
+   </script>
+
+   <script>
+    //ES5 syntax
+    var person = {name: "Peter", age: 28};
+    var name = person.name;
+    var age = person.age;
+    alert(name);
+    alert(age);
+   </script>-->
+
+   <!-- <script>
+    //ES6 syntax
+    let person  = {name: "Peter", age: 28};
+    let {name, age} = person;
+    alert(name);
+    alert(age);
+   </script>
+</html>-->

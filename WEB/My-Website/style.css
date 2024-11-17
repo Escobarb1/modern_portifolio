@@ -1,0 +1,562 @@
+
+ body{
+    margin: 1px;
+}
+
+
+#index-container{
+    margin: 0px;
+    padding: 0px;
+       background-image: url(images/11.jpg);
+       background-size: cover;
+       background-position: center;
+       justify-content: center;
+       height: 780px;
+       width: 1348px;
+       opacity: 0.85;
+}
+
+#head{
+    font-size: 45px;
+    font-family:'Lato', sans-serif;
+    padding: 50px;
+    margin-top: -40px;
+    margin-right: 220px;
+}
+
+#head a{
+    text-decoration: none; 
+    color: #fff;
+}
+
+#container{
+    margin: 0;
+    text-align: center;
+}
+
+#logo{
+    float: left;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+
+.nav-bar{
+    list-style: none;
+    position: relative;
+    display: inline-flex;
+}
+
+.active{
+    background-color: rgb(238, 67, 96);
+    padding: 3px;
+}
+
+#menu{
+    margin-left: 890px;
+   padding: 5px;
+   font-size: 20px;   
+}
+
+#menu ul,li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+     }
+
+li:only-child{
+    background-color:rgb(238, 67, 96);
+    margin-top: -55px;
+    margin-right: 10px;
+    width: 70px;
+    float: right;
+    font-size: 20px;
+    font-family: "Myraid pro", "Narrow Arail";
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#home{
+    background-color: rgb(238, 67, 96);
+    padding: 3px;
+}
+
+
+ #menu a{
+    font-family: "Myraid pro", "Narrow Arail";
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a:link{
+    padding: 3px; 
+}
+
+#menu a:hover{
+    color: #fff;
+    background-color: rgb(238, 67, 96);
+} 
+
+/* #learn a{
+    color: rgb(238, 67, 96);
+    margin-left: 350px; 
+    margin-bottom: 500px;
+}
+
+#learn a:link{
+    text-decoration: none;
+} */
+
+#sign-in ol,li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#sign-in a{
+    font-family: "Myraid pro", "Narrow Arail";
+    color: #fff;
+    text-decoration: none;
+}
+
+#sign-in a:link{
+    padding: 3px;
+}
+
+/* #sign-in a:hover{
+    background-color: #A8BF75;
+} */
+
+.color-highlight {
+	color: #A8BF75;
+}
+
+.brand{
+    color: #c7c4c4;
+    text-decoration: none;
+    font-size: 50px;
+    float: left;
+    padding: 16px 90px 12px;
+     font-family: 'Lato', sans-serif;
+     font-weight: 200px;
+}
+
+
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(139, 138, 138);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+    z-index: 0;
+}
+
+#dropdown:hover #dropdown-content{
+    display: block;
+    transform: scaleY(1); 
+}
+
+#brand1{
+    font-size: 25px;
+    color: #fff;
+    /* text-align: justify; */
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#brand2{
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    text-align: center;
+    margin-left: 440px;
+    margin-top: 20px;
+}
+
+#brand2 a{
+    color: rgb(238, 67, 96);
+}
+
+#brand2 a:link{
+    text-decoration: none;
+}
+
+#brand3{
+    color: #fff;
+    margin-top: 250px;
+    background-color: rgb(238, 67, 96);
+    padding: 15px;
+    border-radius: 5px; 
+    width: 210px;
+    font-weight: bold;
+    margin-left: 550px;
+    font-family: sans-serif;
+}
+
+#brand3 a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+#brand3 a:link:visited{
+    color: #ff0000;
+}
+
+#brand3 a:hover{
+    color: #fff;
+}
+
+#footer{
+    float: right;
+    color: #fff; 
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+#footer a{
+    font-family:  "Myraid pro", "Arial Narrow";
+}
+
+#footer a:link{
+    color: #c7d4aa;
+    text-decoration: none;
+}
+
+#footer a:link:hover{
+    color: #fff;
+}
+
+
+
+
+    
+/* service */
+#services-container{
+background-image: url(images/pexels.jpg);
+justify-content: center;
+background-position: center;
+background-size: cover;
+opacity: 6;
+height: 750px;
+}
+
+#container2{
+    text-align: center;
+}
+
+#menu2{
+    margin-left: 790px;
+    display: flex 1;
+    padding: 5px;
+    font-size: 20px;   
+}
+
+#menu2 ul,li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+     }
+
+     #menu2 a{
+        font-family: "Myraid pro", "Narrow Arail";
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #menu2 a:link{
+        padding: 3px; 
+    }
+    
+    #menu2 a:hover{
+        color: #fff;
+        background-color: rgb(238, 67, 96);
+    }
+
+    #services{
+        background-color: rgb(238, 67, 96);
+        padding: 3px;
+    }
+
+    #header{
+        margin-right: 250px;
+        font-size: 50px;
+    }
+
+    #header a{
+        color: #fff;
+    }
+
+    #header a:link{
+        text-decoration: none;
+    }
+
+     #we{
+        color: #fff;
+        padding: 50px;
+        font-size: 20px;
+    }
+
+    #heros{
+        display: flex 1;
+    }
+    
+    .brandy a{
+        color: #4d4b4b;
+        border: #222222 2px solid;
+    }
+
+    .brandy a:hover{
+        color: #A8BF75;
+    }
+
+    .brandy a:link:hover{
+        background-color: #fff;
+    }
+
+    .brandy a:link{
+        text-decoration: none;
+        font-size: 25px;
+        background-color: #c7c4c4;
+    }
+
+ 
+
+  .brandy{
+        color: #c7c4c4;
+        text-decoration: none;
+        font-size: 29px;
+        float: left;
+        padding: 12px 9px 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 200px;
+        background-color: rgb(233, 233, 233);
+        min-width: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+        margin-left:100px;
+    }
+
+   .color-highlighty {
+        color: #A8BF75;
+    }
+
+     #thumb{
+        margin-top: -100px;
+    }
+
+
+
+
+/* contact */
+#contact-container{
+    background-image: url(images/Dark1.jpg);
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    height: 820px;
+
+}
+
+#container4{
+    text-align: center;
+}
+
+
+#contact{
+    background-color: rgb(238, 67, 96);
+    padding: 3px;
+}
+
+#head1{
+    margin-right: 250px;
+    font-size:35px;
+    color: #fff;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
+#head2{
+    color: rgb(194, 186, 186);
+    font-size: 20px;
+    margin-top: 20px;
+    font-family:  "Myraid pro", "Narrow Arail";
+}
+
+#address{
+    font-size: 35px;
+    color: #fff;
+    margin-top: 220px;
+}
+
+#address1{
+    color:#fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#number{
+    font-size: 35px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+#number1{
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#form{
+    position: absolute;
+    background-color: rgb(139, 138, 138);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px 15px;
+    z-index: 0;
+    margin-left: 570px;
+}
+
+#add{
+    float: left;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+#num{
+    float: right;
+    margin-top: 200px;
+    margin-right: 350px;
+}
+
+    /* about */
+    #about-container{
+        background-image: url(images/Dark3.jpg);
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        opacity: 6;
+        height: 700px;
+        }
+        
+        #container5{
+            text-align: center;
+        }
+
+        #about{
+            background-color: rgb(238, 67, 96);
+            padding: 3px;
+        }
+
+        #head10{
+            color: #fff;
+            font-size: 50px;
+            margin-right: 250px;
+        }
+    
+        #head{
+            font-size: 50px;
+            font-weight:500;
+            color: #fff;
+            padding-top: 100px;
+            margin-left: 200px;
+        }
+
+        #self{
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #self a{
+            color: rgb(238, 67, 96);
+        }
+
+        #self a:link{
+            text-decoration: none;
+        }
+
+/*----------
+ hamburger
+------- */
+.hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+
+
+/* -------------
+media queries
+-------------- */
+@media only screen and(max-width:1484px) and (min-width:1214px){
+    #brandy{
+        padding: 20px 20%;
+    }   
+}
+
+@media only screen and (max-width:1214px) and (min-width:1000px){
+    {
+        padding: 20px 12%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #index, #services, #about, #contact{
+        overflow-x: hidden;
+    }
+
+    #logo{
+        position: absolute;
+        top: 2px;
+        left: 30px;
+    }
+    
+    .nav-show{
+        opacity: 1;
+    }
+
+    .nav-bar{
+        position:fixed;
+		top: 0px;
+		right:0;
+		width:60%;
+		height: 100vh;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content:space-evenly;
+		background:var(--main-header-background);
+		transform:translatex(100%);
+		transition: transform 0.5s ease-in;
+		z-index: -1;
+    }
+    .hamburger{
+		position:absolute;
+		top: 17px;
+		right: 25%;
+		display: block;
+		cursor:pointer;
+		z-index: 5;
+	}	
+    .nav-bar li{
+        opacity: 0;
+    }
+    .nav-active{
+        transform: translatex(0%);
+    }
+}

@@ -1,0 +1,119 @@
+body{
+    background-image: url(images/FB_IMG_16025134764071757.jpg);
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+}
+#center1{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: #ff0000;
+}
+#center1:hover{
+    background-color: #00ff00;
+}
+.center6{
+    text-align: center;
+
+}
+img[src="images/blackpanther.jpg"]{
+    text-align: center;
+    border: 5px solid;
+    border-color: #00ff00;
+}
+#center2{
+    text-align: center;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 15px;
+    color: #fff;
+}
+#center3{
+    text-align: center;
+    font-weight: bold;
+    background-color: #00ff00;
+    padding: 15px;
+}
+#center4{
+    text-align: center;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 15px;
+    color: #fff;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+ul h2{
+    text-align: center;
+    
+}
+ol{
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+ol h1{
+    text-align: center;
+}
+li:last-child{
+    color: rgb(2, 2, 252);
+}
+li:nth-child(2){
+    color: rgb(4, 8, 245);
+}
+li:nth-child(3){
+    color: rgb(253, 107, 2);
+}
+.center7{
+    text-align: center;
+}
+img[src="images/foil black.jpg"]{
+    text-align: center;
+    border: 5px solid;
+    border-color: #ff0000;
+}
+#center8{
+    text-align: center;
+    background-color: blue;
+    color: #fff;
+    padding: 5px;
+}
+#center5{
+    text-align: center;
+    font-weight: bold;
+    background: rgb(52, 250, 2);
+    padding: 10px;
+}
+#center5:hover{
+    background-color: chocolate;
+}
+table{
+    width: 50%;
+    border: 5px solid;
+    border-color: chocolate;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+    
+}
+thead{
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+    font-weight: bold;
+    color: #fff;
+}
+tr:nth-child(odd){
+    background-color: darkgreen;
+}
+td:first-child{
+    color: darksalmon;
+}

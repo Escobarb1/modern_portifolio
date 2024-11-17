@@ -1,0 +1,11 @@
+{
+  "name": "modern_portifolio",
+  "version": "1.0.0",
+  "description": "Responsive portifolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Escobarb",
+  "license": "MIT"
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Set Inline Styles Demo</title>
+    <style type="text/css">
+        #intro {        
+            font-weight: bold;
+            font-style: italic;
+        }
+        .highlight {
+        background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="intro">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+        
+    <script>
+    // Selecting element
+    var elem = document.getElementById("intro");
+    
+    // Appling styles on element
+    elem.style.color = "blue";
+    elem.style.fontSize = "18px";
+    elem.style.fontWeight = "bold";
+    </script>
+
+    <p id="ernest">Am a nice guy</p>
+    <p>He is also a nice guy</p>
+    <script>
+        var last = document.getElementById("ernest");
+        last.style.color = "red";
+        last.style.fontSize = "20px";
+        last.style.fontWeight = "bold";
+    </script>
+
+    <p id="intro" style="color:red; font-size:20px;">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    
+    <script>
+    // Selecting element
+        var elem = document.getElementById("intro");
+ 
+    // Getting style information from element
+        alert(elem.style.color);  // Outputs: red
+        alert(elem.style.fontSize);  // Outputs: 20px
+        alert(elem.style.fontStyle);  // Outputs nothing
+    </script>
+    <p id="intro" style="color:red; font-size:20px;">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+        
+    <script>
+    // Selecting element
+    var elem = document.getElementById("intro");
+     
+    // Getting computed style information
+    var styles = window.getComputedStyle(elem);
+     
+    alert(styles.getPropertyValue("color"));  // Outputs: rgb(255, 0, 0)    
+    alert(styles.getPropertyValue("font-size"));  // Outputs: 20px
+    alert(styles.getPropertyValue("font-weight"));  // Outputs: 700
+    alert(styles.getPropertyValue("font-style"));  // Outputs: italic
+    </script>
+
+
+    <div id="info" class="disabled">Something very important!</div>
+        
+    <script>
+    // Selecting element
+    var elem = document.getElementById("info");
+    
+    elem.className = "note";  // Add or replace all classes with note class
+    elem.className += " highlight";  // Add a new class highlight
+    </script>
+
+    <div id="info" class="disabled">Something very important!</div>
+    
+    <script>
+    // Selecting element
+    var elem = document.getElementById("info");
+     
+    elem.classList.add("hide");  // Add a new class
+    elem.classList.add("note", "highlight");  // Add multiple classes
+    elem.classList.remove("hide"); // Remove a class
+    elem.classList.remove("disabled", "note"); // Remove multiple classes
+    elem.classList.toggle("visible"); // If class exists remove it, if not add it
+     
+    // Determine if class exist
+    if(elem.classList.contains("highlight")) {
+        alert("The specified class exists on the element.");
+    }
+    </script>
+
+</body>
+</html>

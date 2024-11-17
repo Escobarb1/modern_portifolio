@@ -1,0 +1,116 @@
+body{
+    background-image: url(images/c.png);
+    background-position: center;
+    justify-content: center;
+    background-size: cover;
+    margin: 0px;
+}
+#center1{
+    text-align: center;
+    padding: 10px;
+}
+#center1:hover{
+    background-color: #ff0000;
+}
+.center5{
+    text-align: center;
+}
+img[src="images/blackpanther.jpg"]{
+    border: 5px solid;
+    color: #00ff00;
+}
+#center2{
+    text-align: center;
+    background-color: #00ff00;
+    padding: 10px;
+}
+#center3{
+    text-align: center;
+    background-color: #ff0000;
+    padding: 10px;
+    color: #fff;
+}
+#center4{
+    text-align: center;
+    background-color: #00ff00;
+    padding: 10px;
+}
+ul{
+   text-align: center; 
+list-style-type: none;
+}
+ul h2{
+    text-align: center;
+}
+ol{
+    list-style-type: none;
+    text-align: center;
+}
+ol h1{
+    text-align: center;
+}
+.center6{
+    text-align: center;
+}
+img[src="images/FOIL RED.jpg"]{
+    border: 5px solid;
+    color: #000000;
+}
+ol{
+    text-align: center;
+    list-style-type: none;
+}
+li:last-child{
+    color: deeppink;
+}
+/* li:last-child{
+    color: #ff0000;
+}
+li:only-child{
+    color: gold;
+} */
+#center7{
+    text-align: center;
+    background-color: #0000ff;
+    color: #fff;
+    padding: 5px;
+}
+/* #center7:hover{
+    background-color: #ff0000;
+} */
+li:nth-child(2){
+    color: coral;
+}
+table{
+    width: 50%;
+    border: 5px solid;
+    border-color: darkgreen;
+    border-collapse: collapse;
+}
+thead{
+    font-weight: bold;
+    text-align: center;
+}
+td, tbody{
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+
+}
+tr:nth-child(odd){
+    background-color: rgb(179, 100, 179);
+}
+td:first-child{
+    color: darkorange;
+}
+#center8{
+    text-align: center;
+    background-color: rgb(76, 248, 8);
+    padding: 10px;
+}
+#center8:hover{
+    background-color: #ff0000;
+}
+td:last-child{
+    color: chartreuse;
+}
